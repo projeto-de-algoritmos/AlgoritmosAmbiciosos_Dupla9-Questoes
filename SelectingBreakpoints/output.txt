@@ -1,0 +1,6 @@
+Nota atual + Nota da avaliação
+0 + 20
+20 + 20
+40 + 8
+48 + 8
+Nota Final: 56
