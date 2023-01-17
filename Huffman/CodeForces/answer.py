@@ -22,10 +22,8 @@ class node:
         return self.freq < nxt.freq
 
 
-# utility function to print huffman
-# codes for all symbols in the newly
-# created Huffman tree
-def printNodes(node, val, sum_huffman):
+# sum all bits necessary to represent the characters
+def makeSum(node, val, sum_huffman):
      
     # huffman code for current node
     newVal = val + str(node.huff)
@@ -33,9 +31,9 @@ def printNodes(node, val, sum_huffman):
     # if node is not an edge node
     # then traverse inside it
     if(node.left):
-        printNodes(node.left, newVal, sum_huffman)
+        makeSum(node.left, newVal, sum_huffman)
     if(node.right):
-        printNodes(node.right, newVal, sum_huffman)
+        makeSum(node.right, newVal, sum_huffman)
  
         # if node is edge node then
         # display its huffman code
@@ -77,7 +75,7 @@ while len(nodes) > 1:
 
 sum_huffman = [0]
 
-# Huffman Tree is ready!
-printNodes(nodes[0], '', sum_huffman)
+# sum all bits necessary to represent the characters
+makeSum(nodes[0], '', sum_huffman)
 
 print(sum_huffman[0])
