@@ -1,4 +1,4 @@
-# AlgoritmosAmbiciosos_Dupla9
+# AlgoritmosAmbiciosos_Dupla9_Questoes
 
 **Número da Lista**: 9<br>
 **Conteúdo da Disciplina**: Algoritmos Ambiciosos<br>
